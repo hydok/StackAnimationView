@@ -7,14 +7,14 @@
 ## Sample
 ```code
     <com.hydok.stackanimationview.VerticalStackAnimationView
-        android:id="@+id/verticalStack"
+        android:id="@+id/verticalStackView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 ```
 
 
 ```code
-        view.launchAnimation {
+        verticalStackView.launchAnimation {
             it
                 .inView(textView("111"))
                 .inView(textView("222"))
