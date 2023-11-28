@@ -1,4 +1,4 @@
-# VerticalStackAnimationView
+# StackAnimationView
 자연스럽게 쌓이는 뷰 애니메이션 ...
 
 ![Screen_Recording_20231128_141120_StackAnimationView_1](https://github.com/hydok/StackAnimationView/assets/26853549/1223550d-6973-44d5-b41a-cebe43da1999)
