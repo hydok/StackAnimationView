@@ -22,6 +22,8 @@
                 .inView(textView("333"))
                 .inView(textView("444"),topMarginDp = 30)
                 .inView(textView("555"))
+        }.doOnEnd {
+            Toast.makeText(this, "end...", Toast.LENGTH_SHORT).show()
         }
 ```
 
@@ -32,4 +34,5 @@ You can change your `StepProgressBar` attribute programmatically
 - `launchAnimation()`
 - `inView()`
 - `clearView()`
+- `doOnEnd()`
 
