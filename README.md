@@ -29,7 +29,7 @@
 
 
 ## Customize
-You can change your `StepProgressBar` attribute programmatically
+attribute programmatically
 - `setDuration()`
 - `launchAnimation()`
 - `inView()`
