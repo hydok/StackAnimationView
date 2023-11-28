@@ -2,6 +2,7 @@ package com.hydok.stackanimationview
 
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,10 +23,10 @@ class MainActivity : AppCompatActivity() {
                 .inView(textView("커피..."))
                 .inView(textView("한잔..."),30)
                 .inView(textView("두잔..."))
-                .inView(textView("세잔..."))
-                .clearView()
-                .inView(textView("...퇴근..."))
+        }.doOnEnd {
+            Toast.makeText(this, "end...", Toast.LENGTH_SHORT).show()
         }
+
     }
 
     private fun textView(text: String): TextView {
