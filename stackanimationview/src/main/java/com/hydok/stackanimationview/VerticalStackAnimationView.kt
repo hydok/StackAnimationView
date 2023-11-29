@@ -39,11 +39,13 @@ class VerticalStackAnimationView @JvmOverloads constructor(
 
     private var endAction : (() -> Unit)? = null
 
-    fun launchAnimation(action: suspend (VerticalStackAnimationView) -> Unit) =also {
+    fun launchAnimation(action: suspend (VerticalStackAnimationView) -> Unit) = also {
         if (!isAnimPlayed) {
-            findViewTreeLifecycleOwner()!!.lifecycleScope.launch {
+            val a = findViewTreeLifecycleOwner()!!.lifecycleScope.launch {
+                clearView()
                 action.invoke(this@VerticalStackAnimationView)
                 endAction?.invoke()
+                isAnimPlayed = false
             }
             isAnimPlayed = true
         }
