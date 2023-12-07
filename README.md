@@ -28,7 +28,7 @@
 ```
 
 
-## Customize
+## Function
 attribute programmatically
 - `setDuration()`
 - `launchAnimation()`
