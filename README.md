@@ -4,7 +4,7 @@
 ![Screen_Recording_20231128_141120_StackAnimationView_1](https://github.com/hydok/StackAnimationView/assets/26853549/1223550d-6973-44d5-b41a-cebe43da1999)
 
 
-## Sample
+## How to use
 ```code
     <com.hydok.stackanimationview.VerticalStackAnimationView
         android:id="@+id/verticalStackView"
